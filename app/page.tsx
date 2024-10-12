@@ -5,6 +5,9 @@ import Image from 'next/image';
 import picture1 from '../public/pic1.jpg';
 import {Button} from "@nextui-org/react";
 import picture2 from '../public/pic2.jpg';
+import picture3 from '../public/pic3.jpg';
+import picture4 from '../public/pic4.jpg';
+import picture5 from '../public/pic5.jpg';
 
 
 export default function Home() {
@@ -59,7 +62,7 @@ export default function Home() {
       </section>
        
 <section>
-<div className="flex flex-col md:flex-row justify-between mt-6">
+<div className="flex flex-col md:flex-row justify-between mt-[-30px]">
   <div className="text-4xl mb-2 font-bold text-center md:ml-[40px]">
     <p>London’s Best Luggage Storage Service</p>
     
@@ -113,7 +116,7 @@ export default function Home() {
 
 
   <div className="text-center bg-green-900 text-white p-2 border-spacing-5 border-white rounded-3xl mt-4 md:mt-0 md:mr-[80px] shadow-2xl">
-  <h2 className="text-5xl md:text-6xl mb-2 font-bold">Call us now</h2>
+  <h2 className="text-4xl md:text-5xl mb-2 font-bold">Call us now</h2>
   <p className="text-4xl md:text-7xl mb-2 font-bold">075 3354 4428</p>
 </div>
 
@@ -196,20 +199,20 @@ London, WC1X 8PX</p>
 
       <hr className="h-1 bg-green-800 border-none" />
 
-      <ul className="list-disc list-inside text-xl mb-4 line-height-8 mt-4">
-  <li className="mb-2">
+      <ul className="list-disc list-inside md:text-2xl text-xl mb-4 line-height-12 mt-12 font-beautiful">
+  <li className="mb-4">
     We are the cheapest Luggage storage in London
   </li>
-  <li className="mb-2">
+  <li className="mb-4">
      We have 1400+ Google 5 star reviews
   </li>
-  <li className="mb-2">
+  <li className="mb-4">
   24/7 CCTV and intruder alarms to keep your luggage safe
   </li>
-  <li className="mb-2">
+  <li className="mb-4">
   Open everyday from 7.00am until midnight
   </li>
-  <li className="mb-2">
+  <li className="mb-4">
   We offer long and short term storage options
   </li>
 
@@ -229,6 +232,200 @@ London, WC1X 8PX</p>
     `}</style>
   </div>
 </section>
+
+<section>
+
+  <div>
+  <h2 className="text-4xl font-bold mb-4 text-center text-green-900 mt-12 md:text-6xl">1400+ Google Reviews</h2>
+  <div className="mt-12  shadow-green-900 shadow-2xl">
+  <iframe
+    src="https://widgets.sociablekit.com/google-reviews/iframe/25474543"
+    frameBorder="0"
+    width="100%"
+    height="500"
+    className="border-none"
+  ></iframe>
+</div>
+
+  </div>
+
+</section>
+
+<section className="mt-12">
+  <h2 className="text-4xl font-bold mb-4 text-center text-green-900 ">
+    Let us take care of your luggage
+  </h2>
+  
+  <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 mt-10">
+    {/* First Block */}
+    <div className="flex flex-col items-center">
+      <h3 className="text-2xl font-mono font-semibold mb-2 text-green-800">1. Book online</h3>
+      <Image  src={picture3} 
+       alt="Image 1" 
+       className="w-40 h-40 object-cover mb-2 rounded-3xl" />
+      <p className="text-center font-beautiful font-bold text-gray-700">Book your luggage storage in less than a minute online</p>
+    </div>
+
+    {/* Second Block */}
+    <div className="flex flex-col items-center">
+      <h3 className="text-2xl font-mono  font-semibold mb-2 text-green-800">2. Drop your luggage</h3>
+      <Image  src={picture4} 
+       alt="Image 1" 
+       className="w-40 h-40 object-cover mb-2 rounded-3xl" />
+      <p className="text-center font-beautiful font-bold text-gray-700">Your luggage is sealed and then placed into a secure space for the time of collection</p>
+    </div>
+
+    {/* Third Block */}
+    <div className="flex flex-col items-center">
+      <h3 className="text-2xl font-mono  font-semibold mb-2 text-green-800">3. Collect</h3>
+      <Image  src={picture5} 
+       alt="Image 1" 
+       className="w-40 h-40 object-cover mb-2 rounded-3xl" />
+      <p className="text-center font-beautiful font-bold text-gray-700">Enjoy your stay and collect your belongings when you want</p>
+    </div>
+  </div>
+</section>
+
+
+
+<div className="left-0 right-0">
+  <section className="absolute left-0 right-0">
+    <div className="w-full flex justify-center bg-green-900 text-white mt-12 shadow-2xl p-4">
+      
+      {/* Container for the 4 SVGs and their content */}
+      <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-28  mt-6">
+        
+        {/* First SVG Block */}
+        <div className="flex flex-col items-center">
+        <svg version="1.1" width="64" height="64" viewBox="0 0 256 256">
+            <defs></defs>
+            <g style={{ stroke: 'none', fill: 'none', opacity: 1 }} transform="translate(1.4066 1.4066) scale(2.81 2.81)">
+              <path d="M 48.229 61.853 c -0.043 0 -0.086 -0.003 -0.129 -0.009 l -12.691 -1.648 c -0.343 -0.044 -0.639 -0.263 -0.782 -0.578 c -0.143 -0.315 -0.113 -0.682 0.08 -0.97 l 8.162 -12.184 c 0.212 -0.317 0.588 -0.493 0.967 -0.434 c 0.379 0.052 0.695 0.315 0.814 0.679 l 4.529 13.832 c 0.107 0.326 0.039 0.685 -0.18 0.949 C 48.809 61.722 48.525 61.853 48.229 61.853 z M 37.267 58.42 l 9.518 1.236 l -3.396 -10.374 L 37.267 58.42 z" style={{ fill: 'white' }} />
+              <path d="M 85.076 15.943 h -7.603 H 66.247 h -8.433 V 4.803 c 0 -0.552 -0.447 -1 -1 -1 H 33.186 c -0.552 0 -1 0.448 -1 1 v 11.14 h -8.433 H 12.526 H 4.924 C 2.209 15.943 0 18.152 0 20.867 v 60.405 c 0 2.715 2.209 4.924 4.924 4.924 h 7.602 h 11.227 h 42.494 h 11.227 h 7.603 c 2.715 0 4.924 -2.209 4.924 -4.924 V 20.867 C 90 18.152 87.791 15.943 85.076 15.943 z M 75.474 17.943 v 16.174 c -0.061 -0.022 -0.118 -0.051 -0.182 -0.068 c -0.581 -0.156 -1.189 -0.076 -1.711 0.225 l -5.334 3.079 V 17.943 H 75.474 z M 62.89 53.964 c -0.119 0.068 -0.277 0.026 -0.347 -0.094 l -4.599 -7.965 c -0.044 -0.076 -0.038 -0.147 -0.025 -0.193 c 0.012 -0.046 0.043 -0.111 0.118 -0.154 l 16.545 -9.552 c 0.044 -0.026 0.087 -0.034 0.125 -0.034 c 0.025 0 0.048 0.004 0.067 0.009 c 0.046 0.013 0.11 0.043 0.154 0.119 l 4.599 7.963 c 0.07 0.122 0.028 0.279 -0.094 0.349 L 62.89 53.964 z M 34.186 5.803 h 21.628 v 10.14 h -4.205 v -4.935 c 0 -0.552 -0.447 -1 -1 -1 H 39.391 c -0.552 0 -1 0.448 -1 1 v 4.935 h -4.205 V 5.803 z M 40.391 15.943 v -3.935 h 9.218 v 3.935 H 40.391 z M 4.924 84.196 C 3.312 84.196 2 82.885 2 81.272 V 20.867 c 0 -1.612 1.312 -2.924 2.924 -2.924 h 7.602 v 66.253 H 4.924 z M 14.526 84.196 V 17.943 h 7.227 v 8.791 c -0.374 0.223 -0.738 0.464 -1.08 0.737 c -2.329 1.859 -3.665 4.632 -3.665 7.609 c 0 3.541 1.908 6.638 4.744 8.34 v 40.777 H 14.526 z M 19.009 35.08 c 0 -2.365 1.062 -4.568 2.913 -6.045 c 1.381 -1.103 3.047 -1.685 4.818 -1.685 c 4.263 0 7.73 3.468 7.73 7.73 s -3.468 7.73 -7.73 7.73 S 19.009 39.342 19.009 35.08 z M 23.753 84.196 v -39.86 c 0.942 0.305 1.945 0.474 2.987 0.474 c 5.365 0 9.73 -4.365 9.73 -9.73 s -4.365 -9.73 -9.73 -9.73 c -1.019 0 -2.026 0.169 -2.987 0.479 v -7.885 h 9.433 h 6.205 h 11.218 h 6.205 h 9.433 v 20.565 l -9.21 5.317 c -0.521 0.301 -0.895 0.787 -1.05 1.369 c -0.156 0.582 -0.076 1.189 0.225 1.711 l 4.6 7.966 c 0.417 0.722 1.177 1.126 1.956 1.126 c 0.382 0 0.77 -0.098 1.123 -0.302 l 2.356 -1.36 v 29.861 H 23.753 z M 68.247 84.196 V 53.18 l 7.227 -4.172 v 35.188 H 68.247 z M 88 81.272 c 0 1.612 -1.312 2.924 -2.924 2.924 h -7.603 V 47.853 l 2.96 -1.709 c 1.076 -0.621 1.447 -2.003 0.826 -3.081 l -3.786 -6.557 V 17.943 h 7.603 c 1.612 0 2.924 1.312 2.924 2.924 V 81.272 z" style={{ fill: 'white' }} />
+            </g>
+          </svg>
+          <p className="text-center mt-2 md:text-xl">We handled over 100,000 luggage</p>
+        </div>
+
+        {/* Second SVG Block */}
+        <div className="flex flex-col items-center">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="64"
+  height="64"
+  viewBox="0 0 256 256"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs></defs>
+  <g
+    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+    style={{
+      stroke: 'none',
+      strokeWidth: 0,
+      strokeDasharray: 'none',
+      strokeLinecap: 'butt',
+      strokeLinejoin: 'miter',
+      strokeMiterlimit: 10,
+      fill: 'none',
+      fillRule: 'nonzero',
+      opacity: 1,
+    }}
+  >
+    <path
+      d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"
+      style={{
+        stroke: 'none',
+        strokeWidth: 1,
+        strokeDasharray: 'none',
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeMiterlimit: 10,
+        fill: 'white',
+        fillRule: 'nonzero',
+        opacity: 1,
+      }}
+    />
+  </g>
+</svg>
+
+
+          <p className="text-center mt-3 md:text-xl ">1400+ Google 5 star reviews</p>
+        </div>
+
+        {/* Third SVG Block */}
+        <div className="flex flex-col items-center">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="64"
+  height="64"
+  viewBox="0 0 256 256"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs></defs>
+  <g
+    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+    style={{
+      stroke: 'none',
+      strokeWidth: 0,
+      strokeDasharray: 'none',
+      strokeLinecap: 'butt',
+      strokeLinejoin: 'miter',
+      strokeMiterlimit: 10,
+      fill: 'none',
+      fillRule: 'nonzero',
+      opacity: 1,
+    }}
+  >
+    <path
+      d="M 77.742 75.512 H 29.095 c -3.413 0 -6.696 -1.438 -9.01 -3.947 L 3.248 53.311 c -4.299 -4.66 -4.299 -11.961 0 -16.621 l 16.837 -18.254 c 2.314 -2.508 5.598 -3.947 9.01 -3.947 h 48.647 C 84.501 14.489 90 19.987 90 26.746 v 36.508 C 90 70.013 84.501 75.512 77.742 75.512 z M 29.095 21.489 c -1.463 0 -2.873 0.617 -3.865 1.693 L 8.393 41.436 c -1.844 1.999 -1.844 5.13 0 7.129 L 25.23 66.818 c 0.993 1.076 2.401 1.693 3.865 1.693 h 48.647 c 2.899 0 5.258 -2.358 5.258 -5.258 V 26.746 c 0 -2.899 -2.358 -5.257 -5.258 -5.257 H 29.095 z"
+      style={{
+        stroke: 'none',
+        strokeWidth: 1,
+        strokeDasharray: 'none',
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeMiterlimit: 10,
+        fill: 'white',
+        fillRule: 'nonzero',
+        opacity: 1,
+      }}
+    />
+    <circle
+      cx="17.892"
+      cy="45.002"
+      r="5.372"
+      style={{
+        stroke: 'none',
+        strokeWidth: 1,
+        strokeDasharray: 'none',
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeMiterlimit: 10,
+        fill: 'white',
+        fillRule: 'nonzero',
+        opacity: 1,
+      }}
+    />
+  </g>
+</svg>
+          <p className="text-center mt-2 md:text-xl">Your luggage is sealed and insured</p>
+        </div>
+
+        {/* Fourth SVG Block */}
+        <div className="flex flex-col items-center">
+          <svg className="w-16 h-16 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+          </svg>
+          <p className="text-center mt-2 md:text-xl">Opposite the Kings cross station</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
 
 
 
