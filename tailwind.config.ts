@@ -10,7 +10,18 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js"
   ],
   theme: {
+
+    
     extend: {
+
+      screens: {     
+        'sm': '375px',  
+        'md': '1024px',  
+        'lg': '1024px', 
+        'xl': '1280px', 
+        '2xl': '1536px'
+    
+      },
 
       fontFamily:{
         beautiful:['"Oswald"', 'sans-serif'],

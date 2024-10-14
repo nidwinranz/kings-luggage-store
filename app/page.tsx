@@ -122,37 +122,36 @@ export default function Home() {
 
 </div>
 </section>
-
 <section>
   <br />
   <div className="flex flex-col md:flex-row items-center justify-end mt-4 md:mt-12 md:mr-22 z-0" style={{ marginTop: '30px' }}>
-
-  <div className="text-center bg-green-900 text-white p-20 border-spacing-5 border-white rounded-3xl mt-4 mb-12 md:mt-10 md:mr-[80px] ">
-  <h3 className="text-2xl md:text-5xl md:mt-2 mb-12 font-bold">Kings Cross Luggage Storage</h3>
-<p className="text-xl md:text-2xl mb-8 md:mt-6 font-bold">Open 7 Days 07:00 – 23:59</p>
-<p className="text-xl md:text-2xl mb-8 md:mt-6 font-bold">345 Grays Inn Road, Kings Cross,
-London, WC1X 8PX</p>
-<p className="text-xl md:text-xl  mb-6 font-beautiful ">Leave your luggage safely in our store and collect your belongings at the time that suits you. We are opposite
-   the Kings cross station platform 01 & 02.All your luggages are insured. Pickup and drop off anytime between opening hours.</p>
-
-    <div className="flex justify-center mt-4">
-      <Button className="bg-white text-green-600 py-6 px-8 rounded-2xl hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center">
-        BOOK NOW
-      </Button>
+    
+    <div className="text-center bg-green-900 text-white p-10 md:p-20 border-spacing-5 border-white rounded-3xl mt-4 mb-12 md:mt-10 md:mr-[80px]">
+      <h3 className="text-2xl md:text-5xl md:mt-2 mb-6 md:mb-12 font-bold">Kings Cross Luggage Storage</h3>
+      <p className="text-lg md:text-2xl mb-4 md:mb-8 md:mt-6 font-bold">Open 7 Days 07:00 – 23:59</p>
+      <p className="text-lg md:text-2xl mb-4 md:mb-8 font-bold">345 Grays Inn Road, Kings Cross, London, WC1X 8PX</p>
+      <p className="text-sm md:text-xl mb-4 md:mb-6 font-beautiful">
+        Leave your luggage safely in our store and collect your belongings at the time that suits you. We are opposite
+        the Kings Cross station platform 01 & 02. All your luggage is insured. Pickup and drop off anytime between opening hours.
+      </p>
+      
+      <div className="flex justify-center mt-4">
+        <Button className="bg-white text-green-600 py-4 px-6 md:py-6 md:px-8 rounded-2xl hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center">
+          BOOK NOW
+        </Button>
+      </div>
     </div>
 
-  </div>
     <Image 
       src={picture2} 
       alt="Description of the image" 
       width={450}  
       height={300} 
-      className="rounded-xl object-cover mb-4 md:mb-0 md:w-1/2 shadow-xl md:mr-[80px]"
-      
+      className="rounded-xl object-cover mb-4 md:mb-0 md:w-1/2 shadow-xl md:mr-[80px]" 
     />
-      
   </div>
 </section>
+
 
 <div className=" left-0 right-0">
   <section className=" absolute left-0 right-0">
@@ -410,7 +409,7 @@ London, WC1X 8PX</p>
     />
   </g>
 </svg>
-          <p className="text-center mt-2 md:text-xl">Your luggage is sealed and insured</p>
+          <p className="text-center mt-3 md:text-xl">Your luggage is sealed and insured</p>
         </div>
 
         {/* Fourth SVG Block */}
