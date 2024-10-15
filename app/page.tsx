@@ -8,155 +8,195 @@ import picture2 from '../public/pic2.jpg';
 import picture3 from '../public/pic3.jpg';
 import picture4 from '../public/pic4.jpg';
 import picture5 from '../public/pic5.jpg';
-
+import { motion } from "framer-motion";
+import Head from 'next/head';
 
 export default function Home() {
+  
   return (
+    <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
+
+    <main >
     <div className="flex flex-col min-h-screen p-8 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <NavBar />
-      <section>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-4 md:mt-12 md:ml-4 z-" style={{ marginTop: '150px' }}> {/* Adjust this value based on your navbar height */}
-        
-      <Image 
-  src={picture1} 
-  alt="Description of the image" 
-  width={700} 
-  height={900} 
-  className="rounded-xl object-cover mb-4 md:mb-0 md:w-1/2 shadow-xl" 
-/>
-
-        <div className="flex flex-col items-center justify-center mr-6 mt-4 md:mt-0 md:ml-4"> 
-          <h1 className="text-4xl md:text-6xl font-bold mb-2 text-center">London’s Best Luggage Storage Service</h1>
-          <p className="text-2xl mb-2 text-center mt-4 font-beautiful ">
-            Please Book Online For Cheaper Price, Insurance & Security Purposes. Explore our features, learn about our services, and discover what we have to offer.
-          </p>
-          <p className="text-xl mb-2 text-center mt-6 font-serif">
-            Online Price £4/bag
-          </p>
-          <p className="text-xl mb-2 text-center font-serif">
-            In store price £5/bag
-          </p>
-          <p className="text-xl mb-2 text-center font-bold font-beautiful mt-6">
-            Cancellation Is Free Before Booking Time Start. For Any inquiries Please Call, text, or Email Us (24/7) Customer Support Available.         
-    
-          </p>
-          <Button className="bg-green-900 text-white py-2 px-4 rounded-xl hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center mt-4">
-  BOOK NOW
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    className="ml-2 w-5 h-5"
+      <section className="px-4 md:px-8 lg:px-12">
+  <div
+    className="flex flex-col md:flex-row lg:flex-wrap items-center justify-center mt-24 md:mt-5 xs:mt-36 w-full"
   >
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-  </svg>
-</Button>
 
-        </div>
-      </div>
-      <div className="mt-32"> 
-  
-      </div>
+<div className="w-full max-w-[500px] aspect-[7/9] relative md:w-1/8 lg:w-[40%] mx-auto  ">
+  <Image
+    src={picture1}
+    alt="Description of the image"
+    layout="fill" // Ensures the image fills its container
+    objectFit="cover" // Ensures the image maintains its aspect ratio and covers the container
+    className="rounded-xl shadow-xl"
+  />
+</div>
 
-      </section>
-       
-<section>
-<div className="flex flex-col md:flex-row justify-between mt-[-30px]">
-  <div className="text-4xl mb-2 font-bold text-center md:ml-[40px]">
-    <p>London’s Best Luggage Storage Service</p>
-    
-    {/* 5 Star SVG */}
-    <div className="flex justify-center my-2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8 text-yellow-500" // Adjust size and color as needed
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8 text-yellow-500"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8 text-yellow-500"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8 text-yellow-500"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8 text-yellow-500"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
-      </svg>
+
+    <div className="flex flex-col items-center justify-center md:ml-4 lg:w-1/2 text-center mt-8">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+        London’s Best Luggage Storage Service
+      </h1>
+
+      <p className="text-lg md:text-2xl lg:text-3xl font-beautiful mt-4">
+        Please Book Online For Cheaper Price, Insurance & Security Purposes.
+        Explore our features, learn about our services, and discover what we
+        have to offer.
+      </p>
+
+      <p className="text-lg md:text-xl lg:text-2xl font-serif mt-6">
+        Online Price £4/bag
+      </p>
+      <p className="text-lg md:text-xl lg:text-2xl font-serif">
+        In store price £5/bag
+      </p>
+
+      <p className="text-lg md:text-xl lg:text-2xl font-bold font-beautiful mt-6">
+        Cancellation Is Free Before Booking Time Start. For Any inquiries Please
+        Call, text, or Email Us (24/7) Customer Support Available.
+      </p>
+
+      <Button className="bg-green-900 text-white py-2 px-4 rounded-xl hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center mt-6 md:mt-4">
+        BOOK NOW
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="ml-2 w-5 h-5"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M13 7l5 5m0 0l-5 5m5-5H6"
+          />
+        </svg>
+      </Button>
     </div>
-    <br></br>
-
-    <p>1400+ Google Reviews</p>
   </div>
 
-
-  <div className="text-center bg-green-900 text-white p-2 border-spacing-5 border-white rounded-3xl mt-4 md:mt-0 md:mr-[80px] shadow-2xl">
-  <h2 className="text-4xl md:text-5xl mb-2 font-bold">Call us now</h2>
-  <p className="text-4xl md:text-7xl mb-2 font-bold">075 3354 4428</p>
-</div>
-
-</div>
+  <div className="mt-32"></div>
 </section>
-<section>
-  <br />
-  <div className="flex flex-col md:flex-row items-center justify-end mt-4 md:mt-12 md:mr-22 z-0" style={{ marginTop: '30px' }}>
-    
-    <div className="text-center bg-green-900 text-white p-10 md:p-20 border-spacing-5 border-white rounded-3xl mt-4 mb-12 md:mt-10 md:mr-[80px]">
-      <h3 className="text-2xl md:text-5xl md:mt-2 mb-6 md:mb-12 font-bold">Kings Cross Luggage Storage</h3>
-      <p className="text-lg md:text-2xl mb-4 md:mb-8 md:mt-6 font-bold">Open 7 Days 07:00 – 23:59</p>
-      <p className="text-lg md:text-2xl mb-4 md:mb-8 font-bold">345 Grays Inn Road, Kings Cross, London, WC1X 8PX</p>
-      <p className="text-sm md:text-xl mb-4 md:mb-6 font-beautiful">
-        Leave your luggage safely in our store and collect your belongings at the time that suits you. We are opposite
-        the Kings Cross station platform 01 & 02. All your luggage is insured. Pickup and drop off anytime between opening hours.
-      </p>
+<section className="px-4 md:px-8 lg:px-12 mt-0 ">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-[-50px] space-y-4 md:space-y-0 md:space-x-12">
+        
+        {/* Left Section: Title and Stars */}
+        <motion.div 
+          className="text-2xl md:text-2xl lg:text-3xl font-bold md:ml-[70px] text-center"
+          initial={{ opacity: 0, x: -100 }} // Slide from left with fade-in
+          whileInView={{ opacity: 1, x: 0 }} // Fully visible when in view
+          transition={{ duration: 1 }} // Animation duration
+          viewport={{ once: true }} // Only animate once
+        >
+          <p>London’s Best Luggage Storage Service</p>
+          
+          {/* 5 Star SVG */}
+          <div className="flex items-center justify-center my-2">
+            {[...Array(5)].map((_, index) => (
+              <motion.svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 md:w-8 md:h-8 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                initial={{ opacity: 0, y: -20 }} // Initial state (fade and slide up)
+                animate={{ opacity: 1, y: 0 }} // Target state (fully visible and in place)
+                transition={{ duration: 0.3, delay: index * 0.2 }} // Delay for each star
+              >
+                <path d="M10 15.27L16.18 18l-1.64-7.03L18 8.24l-7.19-.61L10 1 9.19 7.63 2 8.24l5.46 2.73L5.82 18z" />
+              </motion.svg>
+            ))}
+          </div>
+
+          <motion.p 
+            className="text-lg text-center md:text-2xl lg:text-3xl"
+            initial={{ opacity: 0 }} // Initial state for fade-in
+            animate={{ opacity: 1 }} // Target state for fade-in
+            transition={{ duration: 1.5, delay: 0.5 }} // Delay for the reviews text
+          >
+            1400+ Google Reviews
+          </motion.p>
+        </motion.div>
       
-      <div className="flex justify-center mt-4">
-        <Button className="bg-white text-green-600 py-4 px-6 md:py-6 md:px-8 rounded-2xl hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center">
+        {/* Right Section: Call Us Now */}
+        <motion.div 
+          className="text-center bg-green-900 text-white  rounded-3xl mb-8 lg:mb-0 w-[50%] md:p-12 shadow-xl xs:w-full sm:w-1/2"
+          initial={{ opacity: 0, x: 100 }} // Slide from right with fade-in
+          whileInView={{ opacity: 1, x: 0 }} // Fully visible when in view
+          transition={{ duration: 1 }} // Animation duration
+          viewport={{ once: true }} // Only animate once
+        >
+          <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Call us now</h2>
+          <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold">075 3354 4428</p>
+        </motion.div>
+
+      </div>
+    </section>
+   
+
+
+
+
+{/* section 3 */}
+
+<section className="px-4 md:px-8 lg:px-12">
+  <div className="flex flex-col md:flex-row items-center justify-between mt-1 md:mt-12 mx-auto lg:py-12 py-8 ">
+    <div className='md:w-[120%] lg:w-[40%] sm:w-[65%] 2xl:w-[100%] text-center px-10 md:px-[0px] xs:px-0  '>
+    {/* Left Section: Motion div with text */}
+    <motion.div 
+      initial={{ opacity: 0, x: -100 }} 
+      whileInView={{ opacity: 1, x: 0 }} 
+      transition={{ duration: 1 }} 
+      viewport={{ once: true }}
+      className="bg-green-900 text-white p-8 md:p-16 rounded-3xl mb-8 lg:mb-0  w-full shadow-xl"
+    >
+      <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Kings Cross Luggage Storage</h3>
+      <p className="text-lg sm:text-2xl md:text-xl lg:text-2xl mb-4 font-bold">Open 7 Days 07:00 – 23:59</p>
+      <p className="text-lg sm:text-2xl md:text-xl lg:text-2xl mb-4 font-bold">345 Grays Inn Road, Kings Cross, London, WC1X 8PX</p>
+      <p className="text-sm sm:text-xl md:text-lg lg:text-xl mb-4 font-beautiful">
+        Leave your luggage safely in our store and collect your belongings at the time that suits you. We are opposite the Kings Cross station platform 01 & 02. All your luggage is insured. Pickup and drop off anytime between opening hours.
+      </p>
+     
+      
+      <div className="flex justify-center mt-6">
+        <Button className="bg-white text-green-600 py-3 px-6 md:py-4 md:px-8 rounded-xl hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 transition-all shadow-lg hover:shadow-green-500/50 flex items-center">
           BOOK NOW
         </Button>
       </div>
+    </motion.div>
     </div>
 
-    <Image 
-      src={picture2} 
-      alt="Description of the image" 
-      width={450}  
-      height={300} 
-      className="rounded-xl object-cover mb-4 md:mb-0 md:w-1/2 shadow-xl md:mr-[80px]" 
-    />
+    {/* Right Section: Motion div with image */}
+    <motion.div 
+      initial={{ opacity: 0, x: 100 }} 
+      whileInView={{ opacity: 1, x: 0 }} 
+      transition={{ duration: 1 }} 
+      viewport={{ once: true }}
+      className="w-[100%] shadow-xl md:ml-12 md:w-[120%] lg:w-[50%] sm:w-[60%] 2xl:w-[50%]  "
+    >
+      <Image 
+        src={picture2} 
+        alt="Description of the image" 
+        width={400}  
+        height={300} 
+        className="rounded-xl object-cover w-full h-auto " 
+      />
+    </motion.div>
   </div>
 </section>
+
 
 
 <div className=" left-0 right-0">
   <section className=" absolute left-0 right-0">
     <div className="w-full flex justify-center bg-green-900 text-white mt-4 shadow-2xl p-4">
-      <h2 className="text-2xl md:text-4xl mb-2 font-bold text-center whitespace-normal">
+      <h2 className="text-2xl xs:text-lg sm:text-2xl md:text-4xl mb-2 font-bold text-center whitespace-normal">
         +4475 3354 4428<br />
         info@kingscrossluggage.co.uk
       </h2>
@@ -192,13 +232,13 @@ export default function Home() {
     </div>
 
     <div className="md:ml-10 mt-8 md:mt-0 md:w-1/2">
-      <h2 className="text-8xl font-bold mb-4 text-center text-green-900">£4.00</h2>
+      <h2 className="text-8xl sm:text-4xl font-bold mb-4 text-center text-green-900">£4.00</h2>
       <p className="text-xl mb-4 text-center"> PER BAG PER DAY
       </p>
 
       <hr className="h-1 bg-green-800 border-none" />
 
-      <ul className="list-disc list-inside md:text-2xl text-xl mb-4 line-height-12 mt-12 font-beautiful">
+      <ul className="list-disc list-outside sm:text-lg  md:text-2xl text-xl mb-4 line-height-12 mt-12 font-beautiful">
   <li className="mb-4">
     We are the cheapest Luggage storage in London
   </li>
@@ -235,7 +275,8 @@ export default function Home() {
 <section>
 
   <div>
-  <h2 className="text-4xl font-bold mb-4 text-center text-green-900 mt-12 md:text-6xl">1400+ Google Reviews</h2>
+  <h2 className="text-4xl font-bold mb-4 text-center text-green-900 mt-12 md:mt-12 sm:mt-[12px] sm:text-4xl  md:text-6xl">
+    1400+ Google Reviews</h2>
   <div className="mt-12  shadow-green-900 shadow-2xl">
   <iframe
     src="https://widgets.sociablekit.com/google-reviews/iframe/25474543"
@@ -250,24 +291,28 @@ export default function Home() {
 
 </section>
 
+
+
+
+
 <section className="mt-12">
-  <h2 className="text-4xl font-bold mb-4 text-center text-green-900 ">
+  <h2 className="text-4xl sm:text-2xl font-bold mb-4 text-center text-green-900 ">
     Let us take care of your luggage
   </h2>
   
   <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 mt-10">
     {/* First Block */}
     <div className="flex flex-col items-center">
-      <h3 className="text-2xl font-mono font-semibold mb-2 text-green-800">1. Book online</h3>
+      <h3 className="text-2xl sm:text-xl font-mono font-semibold mb-2 text-green-800">1. Book online</h3>
       <Image  src={picture3} 
        alt="Image 1" 
        className="w-40 h-40 object-cover mb-2 rounded-3xl" />
-      <p className="text-center font-beautiful font-bold text-gray-700">Book your luggage storage in less than a minute online</p>
+      <p className="text-center  font-beautiful font-bold text-gray-700">Book your luggage storage in less than a minute online</p>
     </div>
 
     {/* Second Block */}
     <div className="flex flex-col items-center">
-      <h3 className="text-2xl font-mono  font-semibold mb-2 text-green-800">2. Drop your luggage</h3>
+      <h3 className="text-2xl sm:text-lg font-mono  font-semibold mb-2 text-green-800">2. Drop your luggage</h3>
       <Image  src={picture4} 
        alt="Image 1" 
        className="w-40 h-40 object-cover mb-2 rounded-3xl" />
@@ -275,8 +320,8 @@ export default function Home() {
     </div>
 
     {/* Third Block */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-2xl font-mono  font-semibold mb-2 text-green-800">3. Collect</h3>
+    <div className="flex flex-col items-center ">
+      <h3 className="text-2xl sm:text-xl font-mono  font-semibold mb-2 text-green-800">3. Collect</h3>
       <Image  src={picture5} 
        alt="Image 1" 
        className="w-40 h-40 object-cover mb-2 rounded-3xl" />
@@ -431,5 +476,7 @@ export default function Home() {
 
 
     </div>
+    </main>
+    </>
   );
 }

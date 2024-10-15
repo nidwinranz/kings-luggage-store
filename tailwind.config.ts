@@ -14,12 +14,13 @@ const config: Config = {
     
     extend: {
 
-      screens: {     
-        'sm': '375px',  
+      screens: {   
+        'xs':'300px',
+        'sm': '768px',  
         'md': '1024px',  
-        'lg': '1024px', 
+        'lg': '1440px',
         'xl': '1280px', 
-        '2xl': '1536px'
+        '2xl': '2560px'
     
       },
 
