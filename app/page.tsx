@@ -8,6 +8,9 @@ import picture2 from '../public/pic2.jpg';
 import picture3 from '../public/pic3.jpg';
 import picture4 from '../public/pic4.jpg';
 import picture5 from '../public/pic5.jpg';
+import picture6 from '../public/pic6.jpg';
+import picture7 from '../public/pic7.jpg';
+
 import { motion } from "framer-motion";
 import Head from 'next/head';
 
@@ -23,19 +26,18 @@ export default function Home() {
     <div className="flex flex-col min-h-screen p-8 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <NavBar />
       <section className="px-4 md:px-8 lg:px-12">
-  <div
-    className="flex flex-col md:flex-row lg:flex-wrap items-center justify-center mt-24 md:mt-5 xs:mt-36 w-full"
-  >
-
-<div className="w-full max-w-[500px] aspect-[7/9] relative md:w-1/8 lg:w-[40%] mx-auto  ">
-  <Image
-    src={picture1}
-    alt="Description of the image"
-    layout="fill" // Ensures the image fills its container
-    objectFit="cover" // Ensures the image maintains its aspect ratio and covers the container
-    className="rounded-xl shadow-xl"
-  />
-</div>
+      <div
+  className="flex flex-col md:flex-row lg:flex-wrap items-center justify-center mt-24 md:mt-5 xs:mt-40 ss:mt-40 w-full"
+>
+  <div className="max-w-full aspect-[7/9] relative w-[80%] sm:w-[60%] md:w-[90%] lg:w-[30%] mx-auto ">
+    <Image
+      src={picture1}
+      alt="Description of the image"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-xl shadow-xl"
+    />
+  </div>
 
 
     <div className="flex flex-col items-center justify-center md:ml-4 lg:w-1/2 text-center mt-8">
@@ -84,11 +86,11 @@ export default function Home() {
   <div className="mt-32"></div>
 </section>
 <section className="px-4 md:px-8 lg:px-12 mt-0 ">
-      <div className="flex flex-col md:flex-row justify-between items-center mt-[-50px] space-y-4 md:space-y-0 md:space-x-12">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-[-50px] space-y-4 md:space-y-0 md:space-x-12 ">
         
         {/* Left Section: Title and Stars */}
         <motion.div 
-          className="text-2xl md:text-2xl lg:text-3xl font-bold md:ml-[70px] text-center"
+          className="text-2xl md:text-2xl lg:text-3xl 2xl:text-5xl font-bold md:ml-[70px] text-center"
           initial={{ opacity: 0, x: -100 }} // Slide from left with fade-in
           whileInView={{ opacity: 1, x: 0 }} // Fully visible when in view
           transition={{ duration: 1 }} // Animation duration
@@ -115,7 +117,7 @@ export default function Home() {
           </div>
 
           <motion.p 
-            className="text-lg text-center md:text-2xl lg:text-3xl"
+            className="text-lg text-center md:text-2xl lg:text-3xl 2xl:text-5xl"
             initial={{ opacity: 0 }} // Initial state for fade-in
             animate={{ opacity: 1 }} // Target state for fade-in
             transition={{ duration: 1.5, delay: 0.5 }} // Delay for the reviews text
@@ -126,15 +128,16 @@ export default function Home() {
       
         {/* Right Section: Call Us Now */}
         <motion.div 
-          className="text-center bg-green-900 text-white  rounded-3xl mb-8 lg:mb-0 w-[50%] md:p-12 shadow-xl xs:w-full sm:w-1/2"
-          initial={{ opacity: 0, x: 100 }} // Slide from right with fade-in
-          whileInView={{ opacity: 1, x: 0 }} // Fully visible when in view
-          transition={{ duration: 1 }} // Animation duration
-          viewport={{ once: true }} // Only animate once
-        >
-          <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Call us now</h2>
-          <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold">075 3354 4428</p>
-        </motion.div>
+  className="text-center bg-green-900 text-white rounded-3xl mb-8 lg:mb-0 w-full max-w-[600px] md:w-1/2 sm:w-1/2 p-4 shadow-xl"
+  initial={{ opacity: 0, x: 100 }} // Slide from right with fade-in
+  whileInView={{ opacity: 1, x: 0 }} // Fully visible when in view
+  transition={{ duration: 1 }} // Animation duration
+  viewport={{ once: true }} // Only animate once
+>
+  <h2 className="text-xl ss:text-base sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Call us now</h2>
+  <p className="text-xl ss:text-base sm:text-xl md:text-2xl lg:text-3xl font-bold">075 3354 4428</p>
+</motion.div>
+
 
       </div>
     </section>
@@ -145,22 +148,25 @@ export default function Home() {
 
 {/* section 3 */}
 
-<section className="px-4 md:px-8 lg:px-12">
-  <div className="flex flex-col md:flex-row items-center justify-between mt-1 md:mt-12 mx-auto lg:py-12 py-8 ">
-    <div className='md:w-[120%] lg:w-[40%] sm:w-[65%] 2xl:w-[100%] text-center px-10 md:px-[0px] xs:px-0  '>
+
+
+<section className="px-3 sm:px-10 md:px-8 lg:px-12">
+  <div className="flex flex-col md:flex-row items-center justify-between mt-1 md:mt-12 mx-auto py-8 ">
+    <div className='w-50% md:w-[120%] lg:w-[40%] sm:w-[65%] 2xl:w-[100%] text-center px-10 md:px-[0px] sm:p-0 xs:px-0 ss:p-0 h-full'>
     {/* Left Section: Motion div with text */}
     <motion.div 
       initial={{ opacity: 0, x: -100 }} 
       whileInView={{ opacity: 1, x: 0 }} 
       transition={{ duration: 1 }} 
       viewport={{ once: true }}
-      className="bg-green-900 text-white p-8 md:p-16 rounded-3xl mb-8 lg:mb-0  w-full shadow-xl"
+      className="bg-green-900 text-white p-8 px-7 sm:px-12 md:px-16 lg:px-18 rounded-3xl mb-8 w-full shadow-xl"
     >
-      <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Kings Cross Luggage Storage</h3>
-      <p className="text-lg sm:text-2xl md:text-xl lg:text-2xl mb-4 font-bold">Open 7 Days 07:00 – 23:59</p>
-      <p className="text-lg sm:text-2xl md:text-xl lg:text-2xl mb-4 font-bold">345 Grays Inn Road, Kings Cross, London, WC1X 8PX</p>
-      <p className="text-sm sm:text-xl md:text-lg lg:text-xl mb-4 font-beautiful">
-        Leave your luggage safely in our store and collect your belongings at the time that suits you. We are opposite the Kings Cross station platform 01 & 02. All your luggage is insured. Pickup and drop off anytime between opening hours.
+      <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-4xl font-bold mb-6">Kings Cross Luggage Storage</h3>
+      <p className="text-lg sm:text-lg md:text-lg lg:text-2xl mb-4 font-bold">Open 7 Days 07:00 – 23:59</p>
+      <p className="text-lg sm:text-lg md:text-lg lg:text-2xl mb-4 font-bold">345 Grays Inn Road, Kings Cross, London, WC1X 8PX</p>
+      <p className="text-lg sm:text-lg md:text-lg lg:text-2xl mb-4 font-beautiful">
+        Leave your luggage safely in our store and collect your belongings at the time that suits you.
+         We are opposite the Kings Cross station platform 01 & 02. All your luggage is insured. Pickup and drop off anytime between opening hours.
       </p>
      
       
@@ -178,7 +184,7 @@ export default function Home() {
       whileInView={{ opacity: 1, x: 0 }} 
       transition={{ duration: 1 }} 
       viewport={{ once: true }}
-      className="w-[100%] shadow-xl md:ml-12 md:w-[120%] lg:w-[50%] sm:w-[60%] 2xl:w-[50%]  "
+      className="w-[100%] shadow-xl md:ml-12 md:w-[120%] lg:w-[45%] sm:w-[60%] 2xl:w-[50%]  "
     >
       <Image 
         src={picture2} 
@@ -196,7 +202,7 @@ export default function Home() {
 <div className=" left-0 right-0">
   <section className=" absolute left-0 right-0">
     <div className="w-full flex justify-center bg-green-900 text-white mt-4 shadow-2xl p-4">
-      <h2 className="text-2xl xs:text-lg sm:text-2xl md:text-4xl mb-2 font-bold text-center whitespace-normal">
+      <h2 className="text-2xl ss:text-sm xs:text-lg sm:text-2xl md:text-4xl mb-2 font-bold text-center whitespace-normal">
         +4475 3354 4428<br />
         info@kingscrossluggage.co.uk
       </h2>
@@ -206,8 +212,10 @@ export default function Home() {
 
 
 
+
+
 <section>
-  <div className="flex flex-col md:flex-row items-start justify-between mt-4 md:mt-12 md:ml-10 md:mr-22 z-0" style={{ marginTop: '180px' }}>
+  <div className="flex flex-col md:flex-row justify-between mt-4 md:mt-12 md:ml-10 md:mr-22 z-0" style={{ marginTop: '180px' }}>
     
   
     <div
@@ -231,33 +239,19 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="md:ml-10 mt-8 md:mt-0 md:w-1/2">
-      <h2 className="text-8xl sm:text-4xl font-bold mb-4 text-center text-green-900">£4.00</h2>
-      <p className="text-xl mb-4 text-center"> PER BAG PER DAY
-      </p>
+    <div className="flex flex-col md:ml-10 mt-8 md:mt-0 items-center ">
+  <h2 className="text-6xl sm:text-7xl font-bold mb-4 text-center text-green-900">£4.00</h2>
+  <p className="text-xl mb-4 text-center">PER BAG PER DAY</p>
 
-      <hr className="h-1 bg-green-800 border-none" />
+  <hr className="h-1 bg-green-800 border-none w-[90%]" />
 
-      <ul className="list-disc list-outside sm:text-lg  md:text-2xl text-xl mb-4 line-height-12 mt-12 font-beautiful">
-  <li className="mb-4">
-    We are the cheapest Luggage storage in London
-  </li>
-  <li className="mb-4">
-     We have 1400+ Google 5 star reviews
-  </li>
-  <li className="mb-4">
-  24/7 CCTV and intruder alarms to keep your luggage safe
-  </li>
-  <li className="mb-4">
-  Open everyday from 7.00am until midnight
-  </li>
-  <li className="mb-4">
-  We offer long and short term storage options
-  </li>
-
-
-</ul>
-
+  <ul className="list-disc px-0 list-outside text-sm sm:text-xl mb-4 line-height-12 mt-12 font-beautiful md:text-left ">
+    <li className="mb-4">We are the cheapest Luggage storage in London</li>
+    <li className="mb-4">We have 1400+ Google 5 star reviews</li>
+    <li className="mb-4">24/7 CCTV and intruder alarms to keep your luggage safe</li>
+    <li className="mb-4">Open everyday from 7.00am until midnight</li>
+    <li className="mb-4">We offer long and short term storage options</li>
+  </ul>
 
     </div>
     
@@ -332,9 +326,10 @@ export default function Home() {
 
 
 
-<div className="left-0 right-0">
-  <section className="absolute left-0 right-0">
-    <div className="w-full flex justify-center bg-green-900 text-white mt-12 shadow-2xl p-4">
+
+<div className="left-0 right-0 ">
+  <section className="left-0 right-0 absolute">
+    <div className="  w-full flex justify-center bg-green-900 text-white mt-12 shadow-2xl p-4">
       
       {/* Container for the 4 SVGs and their content */}
       <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-28  mt-6">
@@ -348,8 +343,9 @@ export default function Home() {
               <path d="M 85.076 15.943 h -7.603 H 66.247 h -8.433 V 4.803 c 0 -0.552 -0.447 -1 -1 -1 H 33.186 c -0.552 0 -1 0.448 -1 1 v 11.14 h -8.433 H 12.526 H 4.924 C 2.209 15.943 0 18.152 0 20.867 v 60.405 c 0 2.715 2.209 4.924 4.924 4.924 h 7.602 h 11.227 h 42.494 h 11.227 h 7.603 c 2.715 0 4.924 -2.209 4.924 -4.924 V 20.867 C 90 18.152 87.791 15.943 85.076 15.943 z M 75.474 17.943 v 16.174 c -0.061 -0.022 -0.118 -0.051 -0.182 -0.068 c -0.581 -0.156 -1.189 -0.076 -1.711 0.225 l -5.334 3.079 V 17.943 H 75.474 z M 62.89 53.964 c -0.119 0.068 -0.277 0.026 -0.347 -0.094 l -4.599 -7.965 c -0.044 -0.076 -0.038 -0.147 -0.025 -0.193 c 0.012 -0.046 0.043 -0.111 0.118 -0.154 l 16.545 -9.552 c 0.044 -0.026 0.087 -0.034 0.125 -0.034 c 0.025 0 0.048 0.004 0.067 0.009 c 0.046 0.013 0.11 0.043 0.154 0.119 l 4.599 7.963 c 0.07 0.122 0.028 0.279 -0.094 0.349 L 62.89 53.964 z M 34.186 5.803 h 21.628 v 10.14 h -4.205 v -4.935 c 0 -0.552 -0.447 -1 -1 -1 H 39.391 c -0.552 0 -1 0.448 -1 1 v 4.935 h -4.205 V 5.803 z M 40.391 15.943 v -3.935 h 9.218 v 3.935 H 40.391 z M 4.924 84.196 C 3.312 84.196 2 82.885 2 81.272 V 20.867 c 0 -1.612 1.312 -2.924 2.924 -2.924 h 7.602 v 66.253 H 4.924 z M 14.526 84.196 V 17.943 h 7.227 v 8.791 c -0.374 0.223 -0.738 0.464 -1.08 0.737 c -2.329 1.859 -3.665 4.632 -3.665 7.609 c 0 3.541 1.908 6.638 4.744 8.34 v 40.777 H 14.526 z M 19.009 35.08 c 0 -2.365 1.062 -4.568 2.913 -6.045 c 1.381 -1.103 3.047 -1.685 4.818 -1.685 c 4.263 0 7.73 3.468 7.73 7.73 s -3.468 7.73 -7.73 7.73 S 19.009 39.342 19.009 35.08 z M 23.753 84.196 v -39.86 c 0.942 0.305 1.945 0.474 2.987 0.474 c 5.365 0 9.73 -4.365 9.73 -9.73 s -4.365 -9.73 -9.73 -9.73 c -1.019 0 -2.026 0.169 -2.987 0.479 v -7.885 h 9.433 h 6.205 h 11.218 h 6.205 h 9.433 v 20.565 l -9.21 5.317 c -0.521 0.301 -0.895 0.787 -1.05 1.369 c -0.156 0.582 -0.076 1.189 0.225 1.711 l 4.6 7.966 c 0.417 0.722 1.177 1.126 1.956 1.126 c 0.382 0 0.77 -0.098 1.123 -0.302 l 2.356 -1.36 v 29.861 H 23.753 z M 68.247 84.196 V 53.18 l 7.227 -4.172 v 35.188 H 68.247 z M 88 81.272 c 0 1.612 -1.312 2.924 -2.924 2.924 h -7.603 V 47.853 l 2.96 -1.709 c 1.076 -0.621 1.447 -2.003 0.826 -3.081 l -3.786 -6.557 V 17.943 h 7.603 c 1.612 0 2.924 1.312 2.924 2.924 V 81.272 z" style={{ fill: 'white' }} />
             </g>
           </svg>
-          <p className="text-center mt-2 md:text-xl">We handled over 100,000 luggage</p>
+          <p className="text-center mt-2 ">We handled over 100,000 luggage</p>
         </div>
+        
 
         {/* Second SVG Block */}
         <div className="flex flex-col items-center">
@@ -394,7 +390,7 @@ export default function Home() {
 </svg>
 
 
-          <p className="text-center mt-3 md:text-xl ">1400+ Google 5 star reviews</p>
+          <p className="text-center mt-3  ">1400+ Google 5 star reviews</p>
         </div>
 
         {/* Third SVG Block */}
@@ -454,7 +450,7 @@ export default function Home() {
     />
   </g>
 </svg>
-          <p className="text-center mt-3 md:text-xl">Your luggage is sealed and insured</p>
+          <p className="text-center mt-3 ">Your luggage is sealed and insured</p>
         </div>
 
         {/* Fourth SVG Block */}
@@ -462,7 +458,7 @@ export default function Home() {
           <svg className="w-16 h-16 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
           </svg>
-          <p className="text-center mt-2 md:text-xl">Opposite the Kings cross station</p>
+          <p className="text-center mt-2 ">Opposite the Kings cross station</p>
         </div>
 
       </div>
@@ -470,7 +466,69 @@ export default function Home() {
   </section>
 </div>
 
+<section className="h-[90vh] md:h-[40vh]"></section>
+<section className="px-0 md:px-12">
+  <div className="flex flex-col md:flex-row">
+    <div className="w-full md:w-1/2 content-center">
+      <div className="sm:px-6">
+        <h1 className="text-lg sm:text-2xl text-center font-bold">
+          Frequently Asked Questions
+        </h1>
+      </div>
+      <div className="px-4 sm:px-6 mt-10">
+        <h1 className="text-[#4b6050] text-xl lg:text-2xl font-bold">
+          What is Kings Cross Luggage Storage?
+        </h1>
+        <p className="text-[#4b6050] text-base lg:text-lg mt-6 sm:mt-6">
+          Kings Cross Luggage Storage is London's best short-term & long-term luggage storage service. Our services are a quantum leap from other luggage storage services. With the rate of £4.00 per day coupled with the best insurance up to £2,000, you can secure your bags affordably with a peace of mind. Our staffs are vetted & trained to handle your luggages safely. In short, Just book online, drop off your bags for safekeeping and enjoy your day in London luggage free!
+        </p>
+      </div>
+      <div className="px-4 sm:px-6 mt-10">
+        <h1 className="text-[#4b6050] text-xl md:text-xl font-bold">
+          How do I book my luggage storage?
+        </h1>
+        <p className="text-[#4b6050] text-base lg:text-lg mt-6 sm:mt-6">
+          You can book your luggage in less than 2 minutes:<br />
+          Enter your name, choose dates/times and number of luggages you wish to store. Click on the "Book Now" button and enter your payment details (or use PayPal) to finish the booking. That's it. Your reservation is confirmed. You'll receive a booking confirmation email with our address and other relevant information for your reference.
+        </p>
+      </div>
+      <div className="px-4 sm:px-6 mt-10">
+        <h1 className="text-[#4b6050] text-xl lg:text-2xl font-bold">
+          How much will it cost me?
+        </h1>
+        <p className="text-[#4b6050] text-base lg:text-lg mt-6 sm:mt-6">
+          Booking with Kings Cross Luggage Storage is the most affordable option in London. We only charge £4.00 per day per bag. We also offer discounts for group bookings or large numbers of bags. Please contact us directly for a discounted price.
+        </p>
+      </div>
+    </div>
 
+    <div className="md:w-1/2 px-4 sm:px-6 mb-8 lg:mb-0 mt-8">
+      <div className="grid grid-cols-1 gap-4">
+        <div className="w-full rounded-xl h-[250px] sm:h-[350px] lg:h-[350px] relative">
+          <Image
+            src={picture6}
+            alt="Luggage Storage"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-xl"
+          />
+        </div>
+        <div className="w-full rounded-xl h-[250px] sm:h-[350px] lg:h-[350px] mt-6 relative">
+          <Image
+            src={picture7}
+            alt="Luggage Storage"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
 
 
 

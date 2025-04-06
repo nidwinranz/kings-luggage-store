@@ -15,7 +15,8 @@ const config: Config = {
     extend: {
 
       screens: {   
-        'xs':'300px',
+        'ss':'320px',
+        'xs':'375px',
         'sm': '768px',  
         'md': '1024px',  
         'lg': '1440px',
@@ -36,3 +37,7 @@ const config: Config = {
   plugins: [nextui()],
 };
 export default config;
+
+
+
+
