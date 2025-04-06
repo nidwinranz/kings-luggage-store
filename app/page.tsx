@@ -480,7 +480,7 @@ export default function Home() {
           What is Kings Cross Luggage Storage?
         </h1>
         <p className="text-[#4b6050] text-base lg:text-lg mt-6 sm:mt-6">
-          Kings Cross Luggage Storage is London's best short-term & long-term luggage storage service. Our services are a quantum leap from other luggage storage services. With the rate of £4.00 per day coupled with the best insurance up to £2,000, you can secure your bags affordably with a peace of mind. Our staffs are vetted & trained to handle your luggages safely. In short, Just book online, drop off your bags for safekeeping and enjoy your day in London luggage free!
+          Kings Cross Luggage Storage is London&rsquo;s best short-term & long-term luggage storage service. Our services are a quantum leap from other luggage storage services. With the rate of £4.00 per day coupled with the best insurance up to £2,000, you can secure your bags affordably with a peace of mind. Our staffs are vetted & trained to handle your luggages safely. In short, Just book online, drop off your bags for safekeeping and enjoy your day in London luggage free!
         </p>
       </div>
       <div className="px-4 sm:px-6 mt-10">
@@ -489,7 +489,7 @@ export default function Home() {
         </h1>
         <p className="text-[#4b6050] text-base lg:text-lg mt-6 sm:mt-6">
           You can book your luggage in less than 2 minutes:<br />
-          Enter your name, choose dates/times and number of luggages you wish to store. Click on the "Book Now" button and enter your payment details (or use PayPal) to finish the booking. That's it. Your reservation is confirmed. You'll receive a booking confirmation email with our address and other relevant information for your reference.
+          Enter your name, choose dates/times and number of luggages you wish to store. Click on the &rsquo;Book Now&rsquo; button and enter your payment details (or use PayPal) to finish the booking. That&rsquo;s it. Your reservation is confirmed. You&rsquo;ll receive a booking confirmation email with our address and other relevant information for your reference.
         </p>
       </div>
       <div className="px-4 sm:px-6 mt-10">
